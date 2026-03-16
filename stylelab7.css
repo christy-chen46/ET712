@@ -1,0 +1,153 @@
+h2{color:crimson;}
+.title{
+    color:blue;
+    background-color: yellow;
+    text-align: center;
+    padding: 1rem;
+}
+#date{
+    color: green;
+    text-align: right;
+    font-style: italic;
+    font-size: 30px;
+}
+.intro{
+    background-color: blueviolet;
+    color: azure;
+    padding: 30px;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+img{width: 100%; display: block;}
+.imgcontainer{
+    width: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: magenta 15px ridge;
+}
+
+/* card session*/
+.cardcontainer{
+    background-color: azure;
+    padding: 50px;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card1{
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px gray;
+    transition: ease-in-out 300ms;
+    position: relative;
+    margin: 2%;
+}
+
+.card1:hover{
+    cursor: pointer;
+    box-shadow: none;
+    transform: scale(1.02);
+
+}
+.card1:hover .cardtitle{
+    color: magenta;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cardtitle{
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    left: 5%;
+    text-align: center;
+    color: lightblue;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 1500px) {
+    .cardcontainer{
+        background-color: orange;
+    }
+    .card1{width: 250px;}
+}
+
+@media only screen and (min-width: 1100px) {
+    .cardcontainer{
+        background-color: lightgreen;
+    }
+    .card1{width: 200px;}
+}
+
+@media only screen and (min-width: 900px) {
+    .cardcontainer{
+        background-color: lightyellow;
+    }
+    .card1{width: 500px;}
+}
+
+/* General container styling */
+.card-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Default: one card per row (mobile) */
+.card-container {
+  grid-template-columns: 1fr;
+}
+/* Card styling */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top; 
+}
+.card-title {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+  color: #333;
+}
+.card-text {
+  color: #555;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.card-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
+/* Medium breakpoint: 2 cards per row */
+@media (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Large breakpoint: 3 cards per row */
+@media (min-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
