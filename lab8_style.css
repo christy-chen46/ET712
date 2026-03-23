@@ -1,0 +1,26 @@
+.colorblue{
+    text-align: right;
+    font-weight: bolder;
+    color: aqua;
+}
+
+.hovercolor{
+    font-weight: bolder;
+    color: crimson;
+}
+
+.mouseoutcolor{
+    color: green;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: solid 2px gray;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(35, 146, 236);
+    border-radius: 50%;
+}
