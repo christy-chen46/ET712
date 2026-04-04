@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 10, form events</title>
+    <link rel="stylesheet" href="lab10_chen.css">
+</head>
+<body>
+    <main>
+        <form id="myform">
+            <label>Username:
+                <input type="text" id="username" placeholder="Type username..." required>
+            </label>
+            
+            <label>Password:
+                <input type="password" id="password" placeholder="Type your password..." required>
+            </label>
+
+            <div class="passwordmsg"></div>
+            <button type="submit" class="btnsubmit">Submit</button>
+        </form>
+
+        <!--display the welcome message-->
+        <div class="greeting">
+            <p>Welcome to form event <span></span> </p>
+        </div>
+    </main>
+    
+    <script src="lab10_chen.js"></script>
+</body>
+</html>
