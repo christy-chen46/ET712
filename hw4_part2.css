@@ -1,0 +1,21 @@
+.gallerycontainer {
+  width: 600px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+}
