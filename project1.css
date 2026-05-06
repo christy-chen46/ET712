@@ -1,0 +1,188 @@
+/* =======================
+   BASE LAYOUT (sticky footer fix)
+======================= */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* MAIN pushes footer down */
+main {
+    flex: 1;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+    background: #ffcc00;
+    padding: 20px;
+}
+
+/* =======================
+   HOME MENU
+======================= */
+.menuButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menuBtn {
+    font-size: 22px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+}
+
+.colors { background: #ff6b6b; }
+.numbers { background: #4dabf7; }
+.shapes { background: #51cf66; }
+.animals { background: #845ef7; }
+
+/* =======================
+   NAV (if still used)
+======================= */
+#menu {
+    background: #ff6699;
+    padding: 15px;
+}
+
+#menu button {
+    font-size: 20px;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 15px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+/* =======================
+   SECTIONS (game screens)
+======================= */
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+button {
+    padding: 14px;
+    margin: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background: #7bd389;
+    color: white;
+    cursor: pointer;
+}
+
+/* =======================
+   GAME DISPLAYS
+======================= */
+#colorDisplay {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#appleContainer {
+    font-size: 40px;
+}
+
+#shapeDisplay,
+#animalDisplay {
+    font-size: 60px;
+    margin: 15px;
+}
+
+/* =======================
+   FEEDBACK POPUP
+======================= */
+.popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+
+#feedbackContent {
+    margin-top: 20%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* WIN animation */
+.win {
+    color: green;
+    animation: bounce 0.6s ease;
+}
+
+/* LOSE animation */
+.lose {
+    color: red;
+    animation: shake 0.4s ease;
+}
+
+/* =======================
+   ANIMATIONS
+======================= */
+@keyframes bounce {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* =======================
+   FOOTER (now always bottom)
+======================= */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

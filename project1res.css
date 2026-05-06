@@ -1,0 +1,12 @@
+@media (max-width: 900px) {
+    section { width: 90%; }
+}
+
+@media (max-width: 600px) {
+    button { width: 90%; font-size: 20px; }
+    .menuBtn { width: 90%; }
+}
+
+@media (min-width: 1200px) {
+    section { width: 60%; }
+}

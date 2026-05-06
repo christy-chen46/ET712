@@ -1,0 +1,47 @@
+*{box-sizing: border-box;}
+#myform{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: azure;
+    width: 300px;
+    margin: 5rem auto;
+    padding: 3rem 5rem;
+}
+
+.btnsubmit{
+    background-color: green;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btnsubmit.hover{
+    background-color: crimson;
+}
+
+.greeting{
+    width: 300px;
+    padding: 1rem;
+    margin: auto;
+    display: none;
+}
+
+.greeting p span {
+    font-family: "algerian";
+}
+
+label{
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.passwordmsg{
+    color: crimson;
+    font-style: italic;
+}
+.btnsubmit:disabled{
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: not-allowed;
+}

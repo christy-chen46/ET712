@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-K Learning</title>
+
+<link rel="stylesheet" href="project1.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌈 Pre-K Learning</h1>
+    <p>Tap a game to start!</p>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="homeScreen" class="active home">
+    <h2>🎮 Choose a Game!</h2>
+
+    <div class="menuButtons">
+        <button onclick="showSection('colors')" class="menuBtn colors">🎨 Colors</button>
+        <button onclick="showSection('numbers')" class="menuBtn numbers">🔢 Numbers</button>
+        <button onclick="showSection('shapes')" class="menuBtn shapes">🔺 Shapes</button>
+        <button onclick="showSection('animals')" class="menuBtn animals">🐶 Animals</button>
+    </div>
+</section>
+
+<!-- COLORS -->
+<section id="colors">
+    <button class="backBtn" onclick="showSection('homeScreen')">⬅ Back</button>
+    <h2>Tap the correct color!</h2>
+    <div id="colorDisplay"></div>
+    <div id="colorChoices"></div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+    <button class="backBtn" onclick="showSection('homeScreen')">⬅ Back</button>
+    <h2>How many apples?</h2>
+    <div id="appleContainer"></div>
+    <div id="numberChoices"></div>
+</section>
+
+<!-- SHAPES -->
+<section id="shapes">
+    <button class="backBtn" onclick="showSection('homeScreen')">⬅ Back</button>
+    <h2>Tap the correct shape!</h2>
+    <div id="shapeDisplay"></div>
+    <div id="shapeChoices"></div>
+</section>
+
+<!-- ANIMALS -->
+<section id="animals">
+    <button class="backBtn" onclick="showSection('homeScreen')">⬅ Back</button>
+    <h2>Tap the correct animal!</h2>
+    <div id="animalDisplay"></div>
+    <div id="animalChoices"></div>
+</section>
+
+</main>
+
+<!-- FEEDBACK POPUP -->
+<div id="feedbackPopup" class="popup">
+    <div id="feedbackContent"></div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Pre-K Learning</p>
+</footer>
+
+<script src="project1.js"></script>
+</body>
+</html>
