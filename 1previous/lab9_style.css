@@ -1,0 +1,50 @@
+*{box-sizing: border-box;}
+img{width: 100%; display: inline-block; height: 100%;}
+.gallerycontainer, .maincontainer{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+}
+
+.maincontainer{position: relative; padding-top: 10%; z-index: 0;}
+
+.gallerycontainer{position: absolute; z-index: 1; overflow-x: scroll; white-space: nowrap;}
+
+.galleryimg{display: inline-block; width: 500px;}
+
+.btnright, .btnleft{position: absolute; z-index: 2; top: 85%; background-color: rgba(71, 133, 214, 0.5); padding: 1rem; border: none; border-radius: 10px;}
+
+.btnleft{left: 2%;}
+.btnright{right: 2%;}
+
+.btnright:hover, .btnleft:hover{
+    background-color: rgb(71, 133, 214, 0.8);
+    cursor: pointer;
+}
+
+/* resize */
+.resizewindow{
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    background-color: rgba(71, 133, 214, 0.5);
+    color: whitesmoke;
+    padding: 1rem;
+    padding-top: 10%;
+}
+
+/* EXERCISE */
+.headercontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 70px; /* vertically center text */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    background-color: rgb(71, 133, 214);
+}

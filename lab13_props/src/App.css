@@ -1,0 +1,58 @@
+*{box-sizing: border-box;}
+.apptitle{
+  text-align: center;
+  color: darkslateblue;
+}
+
+.appcontainer{
+  background-color: antiquewhite;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 30%;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+img{width: 100%; display: block;}
+.content{
+  font-size: 1.2rem;
+  color:darkblue;
+  font-weight: bolder;
+}
+
+.metadata{
+  color: gray;
+}
+
+.feedbackcard{
+  width: 30%;
+  border: solid 2px gray;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.cardfooter{
+  background-color: #888;
+  color: white;
+  padding: 0.2rem;
+}
+
+.description{margin-bottom: 2rem;}
+.feedbackcard:hover{
+  box-shadow: 0px 0px 5px 1px gray;
+  transform: scale(1.01);
+  overflow: hidden;
+}
+
+.cardfooter:hover {
+  cursor: pointer;
+  background-color: crimson;
+}
