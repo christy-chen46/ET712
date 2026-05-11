@@ -29,10 +29,12 @@ body {
 .card {
   background: white;
   border-radius: 10px;
+  border: 3px dotted pink;
   padding: 15px;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  
 }
 
 .card:hover {
