@@ -7,7 +7,7 @@ function App() {
 
   const submitform = function(e){
     e.preventDefault()
-    alert(`Entered name = ${inputs.username}\nAge = ${inputs.age}\nComments = ${textcomment}\nGender = ${gender}`)
+    alert(`Entered name = ${inputs.username}\nAge = ${inputs.age}\nComments = ${textcomment}\nPassword = ${inputs.password}\nGender = ${gender}`)
   }
 
   const handleinputs = function(e){
@@ -45,7 +45,7 @@ function App() {
           </div>
 
           <div className='formcontrol'>
-            <label for="name">Enter an age: </label>
+            <label for="age">Enter an age: </label>
             <input 
             type='number' 
             id='age'
@@ -61,6 +61,17 @@ function App() {
               id='comments'
               value={textcomment}
               onChange={submitcomment}
+            />
+          </div>
+
+          <div className='formcontrol'>
+            <label for="name">Enter a password: </label>
+            <input 
+            type='text' 
+            id='password'
+            name='password'
+            value = {inputs.password}
+            onChange={handleinputs}
             />
           </div>
 
@@ -82,6 +93,7 @@ function App() {
       <p>Name = {inputs.username}</p>
       <p>Age = {inputs.age}</p>
       <p>Comments = {textcomment}</p>
+      <p>Password = {inputs.password}</p>
       <p>Gender = {gender}</p>
     </div>
   );
