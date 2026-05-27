@@ -11,11 +11,20 @@ import latte from '../images/latte.jpg';
 import matcha from '../images/matcha.jpg';
 import lemon from '../images/lemon.jpg';
 import matchaa from '../images/matchaa.jpg';
+import americano from '../images/amer.jpg';
+import brew from '../images/brew.jpg';
+import coffee from '../images/cof.jpg';
+import tea from '../images/tea.jpg';
 
 import fruit from '../images/fruit.jpg';
 import choco from '../images/choco.jpg';
 import tira from '../images/tira.jpg';
 import lemonc from '../images/lemonc.jpg';
+import red from '../images/red.jpg';
+import carrot from '../images/carrot.jpg';
+import cheese from '../images/cheese.jpg';
+import short from '../images/short.jpg';
+
 const products = [
   {
     id: 1,
@@ -115,18 +124,54 @@ const products = [
 
   {
     id: 9,
-    title: 'Iced Latte',
+    title: 'Iced Coffee',
     category: 'drinks',
-    image: latte,
+    image: coffee,
     description:
-      'Smooth espresso blended with chilled creamy milk.',
+      'Smooth chilled coffee served over ice for a refreshing boost.',
     longDescription:
-      'Freshly brewed espresso poured over ice with silky milk for a refreshing coffeehouse classic.',
-    price: 2.49,
+      'Freshly brewed coffee poured over ice with a bold smooth flavor that is perfect for any time of day.',
+    price: 1.99,
   },
 
   {
     id: 10,
+    title: 'Iced Americano',
+    category: 'drinks',
+    image: americano,
+    description:
+      'Bold espresso poured over ice for a smooth refreshing drink.',
+    longDescription:
+      'Rich espresso shots combined with cold water and ice, creating a crisp full-bodied coffee with a clean finish.',
+    price: 2.49,
+  },
+
+  {
+    id: 11,
+    title: 'Iced Latte',
+    category: 'drinks',
+    image: latte,
+    description:
+      'Creamy espresso drink blended with chilled milk and ice.',
+    longDescription:
+      'Fresh espresso mixed with silky milk and served over ice for a smooth balanced coffeehouse favorite.',
+    price: 2.89,
+  },
+
+  {
+    id: 12,
+    title: 'Cold Brew',
+    category: 'drinks',
+    image: brew,
+    description:
+      'Slow-steeped cold brew coffee with a smooth bold taste.',
+    longDescription:
+      'Brewed slowly in cold water for hours to create a naturally sweet low-acidity coffee served refreshingly cold.',
+    price: 2.49,
+  },
+
+  {
+    id: 13,
     title: 'Matcha Latte',
     category: 'drinks',
     image: matchaa,
@@ -138,7 +183,7 @@ const products = [
   },
 
   {
-    id: 11,
+    id: 14,
     title: 'Strawberry Matcha Latte',
     category: 'drinks',
     image: matcha,
@@ -150,7 +195,7 @@ const products = [
   },
 
   {
-    id: 12,
+    id: 15,
     title: 'Lemonade',
     category: 'drinks',
     image: lemon,
@@ -162,7 +207,19 @@ const products = [
   },
 
   {
-    id: 13,
+    id: 16,
+    title: 'Milk Tea',
+    category: 'drinks',
+    image: tea,
+    description:
+      'Creamy black tea blended with sweet milk over ice.',
+    longDescription:
+      'Freshly brewed black tea combined with creamy milk and light sweetness for a smooth refreshing café-style drink.',
+    price: 1.99,
+  },
+
+  {
+    id: 17,
     title: 'Fruit Cake',
     category: 'cakes',
     image: fruit,
@@ -174,7 +231,19 @@ const products = [
   },
 
   {
-    id: 14,
+    id: 18,
+    title: 'Strawberry Shortcake',
+    category: 'cakes',
+    image: short,
+    description:
+      'Light sponge cake layered with strawberries and whipped cream.',
+    longDescription:
+      'Fluffy vanilla sponge layered with fresh strawberries and airy whipped cream for a classic refreshing dessert.',
+    price: 23.99,
+  },
+
+  {
+    id: 19,
     title: 'Chocolate Cake',
     category: 'cakes',
     image: choco,
@@ -186,7 +255,31 @@ const products = [
   },
 
   {
-    id: 15,
+    id: 20,
+    title: 'Carrot Cake',
+    category: 'cakes',
+    image: carrot,
+    description:
+      'Moist spiced carrot cake topped with cream cheese frosting.',
+    longDescription:
+      'Soft carrot cake made with warm spices and layered with rich tangy cream cheese frosting for a comforting classic dessert.',
+    price: 24.99,
+  },
+
+  {
+    id: 21,
+    title: 'Red Velvet Cake',
+    category: 'cakes',
+    image: red,
+    description:
+      'Velvety cocoa cake layered with smooth cream cheese frosting.',
+    longDescription:
+      'Classic red velvet cake with a soft moist texture and rich cream cheese frosting for a perfectly balanced sweetness.',
+    price: 25.99,
+  },
+
+  {
+    id: 22,
     title: 'Tiramisu Cake',
     category: 'cakes',
     image: tira,
@@ -198,7 +291,7 @@ const products = [
   },
 
   {
-    id: 16,
+    id: 23,
     title: 'Lemon Cake',
     category: 'cakes',
     image: lemonc,
@@ -206,7 +299,20 @@ const products = [
       'Soft lemon cake with bright citrus flavor.',
     longDescription:
       'Moist buttery cake infused with fresh lemon zest and topped with smooth lemon cream frosting.',
-    price: 6.99,
+    price: 25.49,
+  },
+
+  {
+    id: 24,
+    title: 'Cheese Cake',
+    category: 'cakes',
+    image: cheese,
+    description:
+      'Creamy baked cheesecake with a buttery graham crust.',
+    longDescription:
+      'Rich smooth cheesecake baked over a crisp buttery crust for a timeless dessert with a perfectly creamy finish.',
+    price: 31.99,
   },
 ];
+
 export default products;
